@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Firebase Hosting</title>
+    <script src="https://js.stripe.com/v3/"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
     <style>
       body {
@@ -12,6 +13,15 @@
         align-items: center;
         justify-content: center;
         padding-top: 100px;
+        text-align: center;
+      }
+
+      form {
+        min-width: 500px;
+      }
+      #card-element {
+        padding: 10px;
+        border: 2px dashed gray;
       }
     </style>
     
@@ -44,6 +54,28 @@
 
     <button class="button" id="testFunButton">Test Callable Function</button>
 
+    <hr>
+
+    <p>Test Card: 4242424242424242</p>
+
+    <hr>
+
+
+    <form action="/charge" method="post" id="payment-form">
+      <div class="form-row">
+        <label for="card-element">
+          Credit or debit card
+        </label>
+        <div id="card-element">
+          <!-- A Stripe Element will be inserted here. -->
+        </div>
+    
+        <!-- Used to display Element errors. -->
+        <div id="card-errors" role="alert"></div>
+      </div>
+    
+      <button>Attach Source</button>
+    </form>
 
   </body>
 </html>

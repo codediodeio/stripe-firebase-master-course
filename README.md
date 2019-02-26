@@ -1,10 +1,10 @@
 # 5. Payment Sources
 
-Now that we are able to create Stripe customers, we need to collect [payment sources](https://stripe.com/docs/api/sources) (ie Credit/Debit Cards or Bank Accounts) then attach them to the customer account so they can be charged and managed. 
+Now that we are able to create Stripe customers, we need to collect [payment sources](https://stripe.com/docs/api/sources) (ie Credit/Debit Cards or Bank Accounts) then attach them to the customer.  A source has the flexibility to be charged multiple times and managed by the user. 
 
-- Implement a credit card form with Stripe Elements
-- Tokenize the payment source
-- Attach the source to the customer
+- Implement a credit card form with Stripe Elements.
+- Tokenize the payment source.
+- Attach the source to the customer.
 
 # 4. Stripe Customers
 
