@@ -1,9 +1,6 @@
 import { assert } from './helpers';
 import { db, stripe } from './config'; 
 
-
-
-
 /**
 Read the user document from Firestore
 */
@@ -61,6 +58,3 @@ export const getOrCreateCustomer = async(uid: string) => {
     }
 
 }
-
-
-/////// DEPLOYABLE FUNCTIONS ////////
