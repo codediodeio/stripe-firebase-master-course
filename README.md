@@ -1,3 +1,17 @@
+# 3. Callable Functions
+
+Callable functions make it possible to call HTTP cloud functions with the user's Firebase auth context. This can dramatically simplify our code because it means we no longer need to manually validate auth headers in our cloud functions.
+
+In addition, we we also setup a basic frontend with vanilla HTML/JS to validate the integration of our code. 
+
+```
+firebase init hosting 
+
+firebase deploy --only funtions
+
+firebase serve
+```
+
 # 2. Testing with Jest
 
 Now it's time to put some unit tests in place. While this step is optional I highly recommend testing your payment integration because (a) one failed commit could cause you lose out on potential payments, (b) it provides a great playground for rapid development, (c) it will help you better understand your code. 
