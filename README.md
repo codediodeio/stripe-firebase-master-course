@@ -1,3 +1,12 @@
+# 2. Testing with Jest
+
+Now it's time to put some unit tests in place. While this step is optional I highly recommend testing your payment integration because one failed commit could cause you lose out on potential sales.
+
+1. Install Jest
+1. Download your Firebase service account
+1. Setup the runtime config
+1. Write your first test
+
 # 1. Initial Setup
 
 In this section, we accomplish the following tasks
