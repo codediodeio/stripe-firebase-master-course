@@ -1,3 +1,13 @@
+# 4. Stripe Customers
+
+In this section, we learn all about the Stripe [Customer](https://stripe.com/docs/api) API. 
+
+- Validating Data & Error Handling
+- Create a Stripe Customer
+- Associate a Customer with a Firebase User
+- Retrieve a Customer Account
+- Unit Tests
+
 # 3. Callable Functions
 
 Callable functions make it possible to call HTTP cloud functions with the user's Firebase auth context. This can dramatically simplify our code because it means we no longer need to manually validate auth headers in our cloud functions.
