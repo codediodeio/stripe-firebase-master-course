@@ -1,3 +1,10 @@
+# 8. Webhoooks
+
+Stripe can send webhooks (HTTP requests) to your cloud functions when something important happens. There is a webhook for basically every event, but we are most converned when an invoice is successfully paid, or the payment fails. A failed payment means the customer has lapsed on their subscription and we need to update their data in Firestore. 
+
+- Configure Stripe Webhooks
+- Verify the Signing Secret in a Cloud Function
+
 # 7. Subscriptions 
 
 This is the most complex section of the course. It will show you how to create a subscription with recurring payment, retrieve the user's active subscriptions from the API, and cancel subscriptions. 
