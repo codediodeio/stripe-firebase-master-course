@@ -1,3 +1,7 @@
+# 10. Final Project!
+
+You've reached the end 🥳🍺. The final branch is used updates and/or improvements to the course in the future. 
+
 # 9. Coupons
 
 You can apply coupons to subscriptions and orders, but not individual payments. In earlier branches, we added an optional `coupon` argument when creating subscriptions. This section will show you how to validate a customer's coupon code. 
