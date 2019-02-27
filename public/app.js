@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Send the token to your server.
       
       // sourceHandler(source);
-      chargeHandler(source);
+      // chargeHandler(source);
+      subscriptionHandler(source)
     }
   });
 
@@ -116,11 +117,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const chargesBtn = document.getElementById('charges');
   const getChargesFun = fun.httpsCallable('stripeGetCharges');
   
-  chargesBtn.onclick = async(source) => {
-    const res = await getChargesFun();
-    console.log(res)
-    const node = document.createElement('pre')
-    node.innerText = JSON.stringify(res);
-    chargesBtn.replaceWith(node)
+  // chargesBtn.onclick = async(source) => {
+  //   const res = await getChargesFun();
+  //   console.log(res)
+  //   const node = document.createElement('pre')
+  //   node.innerText = JSON.stringify(res);
+  //   chargesBtn.replaceWith(node)
+  // }
+
+
+  /// Subscriptions
+
+  // Create Charge for Specfic Amount
+  const subscriptionFun = fun.httpsCallable('stripeCreateSubscription');
+  const subscriptionHandler = async(source) => {
+    console.log(source.id);
+    const res = await subscriptionFun({ plan: 'bronze-plan', source: source.id });
+    console.log(res);
+    alert('Success, subscribed to plan');
   }
+
+
 });

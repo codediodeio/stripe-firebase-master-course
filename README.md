@@ -1,3 +1,12 @@
+# 7. Subscriptions 
+
+This is the most complex section of the course. It will show you how to create a subscription with recurring payment, retrieve the user's active subscriptions from the API, and cancel subscriptions. 
+
+- Create Plans and Subscriptions
+- Get the Plan Details
+- Cancel a Plan
+- Unit Test
+
 # 6. Charges
 
 The hard part is over and we're ready to get paid! In this section, we will charge a customer's credit card for a fixed amount and retrieve their charge history. 

@@ -8,6 +8,17 @@ export const testFunction = functions.https.onCall( async (data, context) => {
 });
 
 
-export { stripeAttachSource } from './sources';
+export { 
+    stripeAttachSource 
+} from './sources';
 
-export { stripeCreateCharge, stripeGetCharges } from './charges';
+export { 
+    stripeCreateCharge, 
+    stripeGetCharges 
+} from './charges';
+
+export { 
+    stripeCreateSubscription, 
+    stripeGetSubscriptions, 
+    stripeCancelSubscription 
+} from './subscriptions';
