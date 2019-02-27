@@ -9,3 +9,5 @@ export const testFunction = functions.https.onCall( async (data, context) => {
 
 
 export { stripeAttachSource } from './sources';
+
+export { stripeCreateCharge, stripeGetCharges } from './charges';

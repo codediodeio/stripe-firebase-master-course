@@ -1,3 +1,13 @@
+# 6. Charges
+
+The hard part is over and we're ready to get paid! In this section, we will charge a customer's credit card for a fixed amount and retrieve their charge history. 
+
+- Create Charges
+- Idempotency
+- Retrieve a List of Charges
+- Unit Tests
+
+
 # 5. Payment Sources
 
 Now that we are able to create Stripe customers, we need to collect [payment sources](https://stripe.com/docs/api/sources) (ie Credit/Debit Cards or Bank Accounts) then attach them to the customer.  A source has the flexibility to be charged multiple times and managed by the user. 

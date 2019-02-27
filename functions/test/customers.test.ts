@@ -10,7 +10,7 @@ beforeAll( async () => {
   await updateUser(user.uid, user);
 });
 
-test.skip('getOrCreateCustomer creates/retrieves a Stripe Customer', async () => {
+test('getOrCreateCustomer creates/retrieves a Stripe Customer', async () => {
   const cust = await getOrCreateCustomer(user.uid);
 
   expect(cust.id).toContain('cus_');
