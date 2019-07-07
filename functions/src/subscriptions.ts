@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
 import { assert, assertUID, catchErrors } from './helpers';
 import { stripe, db } from './config'; 
-import { getCustomer } from './customers';
+import { getOrCreateCustomer } from './customers';
 import { attachSource } from './sources';
 
 
@@ -18,7 +18,7 @@ Creates and charges user for a new subscription
 */
 export const createSubscription = async(uid:string, source:string, plan: string, coupon?: string) => {
  
-    const customer = await getCustomer(uid);
+    const customer = await getOrCreateCustomer(uid);
 
     await attachSource(uid, source);
 
